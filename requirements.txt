@@ -1,0 +1,23 @@
+google-genai>=0.3.0
+numpy>=1.24.3
+pandas>=2.0.0
+pdf2image>=1.17.0
+pdfplumber>=0.11.0
+Pillow>=10.0.0
+pydantic>=2.0.0
+pytesseract>=0.3.10
+torch>=2.1.0
+torchvision>=0.16.0
+tqdm>=4.66.0
+transformers>=4.36.0
+diffusers>=0.25.0
+peft>=0.7.0
+accelerate>=0.25.0
+safetensors>=0.4.1
+protobuf>=3.20.0 # Added specific version for compatibility
+sentencepiece>=0.1.99 # Added specific version for compatibility
+trl>=0.7.10 # Required for SFTTrainer
+datasets>=2.15.0 # Required for loading JSON datasets
+matplotlib>=3.8.0 # For token distribution plotting
+wandb
+python-dotenv>=1.0.0 # Loads API keys from .env

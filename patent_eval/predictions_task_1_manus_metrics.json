@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "task": "task_1",
+    "base_model": "manus",
+    "adapter": null,
+    "api": "manus",
+    "api_base": "https://api.manus.ai/v2",
+    "decoding": "agent",
+    "test_set_path": "patent_datasets/task_1_test.json",
+    "test_set_size": 50,
+    "input_file": "predictions_task_1_manus.json"
+  },
+  "overall": {
+    "label": "overall",
+    "n": 50,
+    "n_skipped": 0,
+    "bleu": 3.352424248643959,
+    "rougeL_mean": 0.275832583895936,
+    "bertscore_precision_mean": 0.12960187952034175,
+    "bertscore_recall_mean": 0.08566311232862063,
+    "bertscore_f1_mean": 0.10840629826998338
+  },
+  "mean_gen_time_sec": 30.23484
+}

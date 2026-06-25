@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "task": "task_1",
+    "base_model": "Qwen/Qwen3-8B",
+    "quantization": "bf16",
+    "decoding": "sampling",
+    "max_new_tokens": 4096,
+    "batch_size": 1,
+    "sampling": {
+      "temperature": 0.5,
+      "top_p": 0.9,
+      "top_k": 50,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 10
+    },
+    "test_set_path": "/content/drive/MyDrive/patent_datasets/task_1_test.json",
+    "test_set_size": 20,
+    "input_file": "predictions_task_1_qwen_base.json"
+  },
+  "overall": {
+    "label": "overall",
+    "n": 20,
+    "n_skipped": 0,
+    "bleu": 4.738857468292623,
+    "rougeL_mean": 0.2550169746344425,
+    "bertscore_precision_mean": -0.04457023558206856,
+    "bertscore_recall_mean": 0.09250509487465024,
+    "bertscore_f1_mean": 0.024412885576020928
+  }
+}

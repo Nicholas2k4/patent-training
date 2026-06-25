@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "task": "task_1",
+    "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "quantization": "bf16",
+    "decoding": "sampling",
+    "max_new_tokens": 4096,
+    "batch_size": 1,
+    "sampling": {
+      "temperature": 0.5,
+      "top_p": 0.9,
+      "top_k": 50,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 10
+    },
+    "test_set_path": "/content/drive/MyDrive/patent_datasets/task_1_test.json",
+    "test_set_size": 20,
+    "input_file": "predictions_task_1_mistral_base.json"
+  },
+  "overall": {
+    "label": "overall",
+    "n": 20,
+    "n_skipped": 0,
+    "bleu": 1.449304641244358,
+    "rougeL_mean": 0.22748098691130442,
+    "bertscore_precision_mean": 0.040841084183193745,
+    "bertscore_recall_mean": 0.042964015062898396,
+    "bertscore_f1_mean": 0.04294230523519218
+  }
+}

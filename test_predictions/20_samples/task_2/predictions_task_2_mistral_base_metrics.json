@@ -1,0 +1,119 @@
+{
+  "_meta": {
+    "task": "task_2",
+    "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "quantization": "bf16",
+    "decoding": "sampling",
+    "max_new_tokens": 8192,
+    "batch_size": 1,
+    "sampling": {
+      "temperature": 0.5,
+      "top_p": 0.9,
+      "top_k": 50,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 10
+    },
+    "test_set_path": "/content/drive/MyDrive/patent_datasets/task_2_test.json",
+    "test_set_size": 20,
+    "input_file": "predictions_task_2_mistral_base.json"
+  },
+  "overall": {
+    "label": "overall",
+    "n": 20,
+    "n_skipped": 0,
+    "bleu": 0.04621166668163904,
+    "rougeL_mean": 0.11626022912809805,
+    "bertscore_precision_mean": 0.12783410378651752,
+    "bertscore_recall_mean": 0.051232535298913716,
+    "bertscore_f1_mean": 0.09058909933955875
+  },
+  "structural": {
+    "n": 20,
+    "json_valid_rate": 0.15,
+    "json_recoverable_rate": 0.2,
+    "parse_status_counts": {
+      "json_valid": 3,
+      "json_recovered": 1,
+      "regex_fallback": 0,
+      "parse_failed": 16
+    },
+    "all_fields_present_rate": 0.2,
+    "avg_field_coverage": 0.2,
+    "field_presence_rate": {
+      "title": 0.2,
+      "technical_field": 0.2,
+      "background_art": 0.2,
+      "summary_of_invention": 0.2,
+      "brief_description_of_drawing": 0.2,
+      "detailed_description": 0.2
+    }
+  },
+  "per_field": {
+    "title": {
+      "label": "title",
+      "n": 4,
+      "n_skipped": 16,
+      "bleu": 0.0,
+      "rougeL_mean": 0.3790912518853695,
+      "bertscore_precision_mean": 0.12147130817174911,
+      "bertscore_recall_mean": -0.046336212661117315,
+      "bertscore_f1_mean": 0.036058984231203794,
+      "presence_rate": 0.2
+    },
+    "technical_field": {
+      "label": "technical_field",
+      "n": 4,
+      "n_skipped": 16,
+      "bleu": 0.001008809525757712,
+      "rougeL_mean": 0.05872992557775167,
+      "bertscore_precision_mean": 0.03463998925872147,
+      "bertscore_recall_mean": -0.1278438540175557,
+      "bertscore_f1_mean": -0.04668933525681496,
+      "presence_rate": 0.2
+    },
+    "background_art": {
+      "label": "background_art",
+      "n": 4,
+      "n_skipped": 16,
+      "bleu": 0.031177779459400964,
+      "rougeL_mean": 0.1021842611765837,
+      "bertscore_precision_mean": 0.20668847486376762,
+      "bertscore_recall_mean": -0.10469356970861554,
+      "bertscore_f1_mean": 0.04724397766403854,
+      "presence_rate": 0.2
+    },
+    "summary_of_invention": {
+      "label": "summary_of_invention",
+      "n": 4,
+      "n_skipped": 16,
+      "bleu": 0.04084849429726349,
+      "rougeL_mean": 0.17095429720486083,
+      "bertscore_precision_mean": 0.2932841181755066,
+      "bertscore_recall_mean": -0.08743040915578604,
+      "bertscore_f1_mean": 0.09645744832232594,
+      "presence_rate": 0.2
+    },
+    "brief_description_of_drawing": {
+      "label": "brief_description_of_drawing",
+      "n": 4,
+      "n_skipped": 16,
+      "bleu": 1.1492051755418897e-09,
+      "rougeL_mean": 0.03008698703816848,
+      "bertscore_precision_mean": 0.0021458417177200317,
+      "bertscore_recall_mean": -0.5329690501093864,
+      "bertscore_f1_mean": -0.2792985886335373,
+      "presence_rate": 0.2
+    },
+    "detailed_description": {
+      "label": "detailed_description",
+      "n": 4,
+      "n_skipped": 16,
+      "bleu": 2.2650527194504153e-08,
+      "rougeL_mean": 0.05514292778288018,
+      "bertscore_precision_mean": 0.07341238064691424,
+      "bertscore_recall_mean": -0.23320817947387695,
+      "bertscore_f1_mean": -0.0851229801774025,
+      "presence_rate": 0.2
+    }
+  }
+}

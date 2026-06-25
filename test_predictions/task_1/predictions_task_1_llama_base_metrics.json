@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "task": "task_1",
+    "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "quantization": "bf16",
+    "decoding": "sampling",
+    "max_new_tokens": 4096,
+    "batch_size": 1,
+    "sampling": {
+      "temperature": 0.5,
+      "top_p": 0.9,
+      "top_k": 50,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 10
+    },
+    "test_set_path": "/content/drive/MyDrive/patent_datasets/task_1_test.json",
+    "test_set_size": 50,
+    "input_file": "predictions_task_1_llama_base.json"
+  },
+  "overall": {
+    "label": "overall",
+    "n": 50,
+    "n_skipped": 0,
+    "bleu": 3.08423183955028,
+    "rougeL_mean": 0.22180090176818415,
+    "bertscore_precision_mean": -0.029767491263337432,
+    "bertscore_recall_mean": 0.03982970278477296,
+    "bertscore_f1_mean": 0.006011557776946575
+  },
+  "mean_gen_time_sec": 31.206439999999997
+}

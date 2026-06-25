@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "task": "task_1",
+    "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "adapter": "Nicholas2k4/patent-task1-llama",
+    "quantization": "bf16",
+    "decoding": "sampling",
+    "max_new_tokens": 4096,
+    "batch_size": 1,
+    "sampling": {
+      "temperature": 0.5,
+      "top_p": 0.9,
+      "top_k": 50,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 10
+    },
+    "test_set_path": "/content/drive/MyDrive/patent_datasets/task_1_test.json",
+    "test_set_size": 20,
+    "input_file": "predictions_task_1_llama.json"
+  },
+  "overall": {
+    "label": "overall",
+    "n": 20,
+    "n_skipped": 0,
+    "bleu": 17.763765070386587,
+    "rougeL_mean": 0.2868585803523429,
+    "bertscore_precision_mean": 0.07106983797857538,
+    "bertscore_recall_mean": 0.11344140146975405,
+    "bertscore_f1_mean": 0.09341232965234667
+  }
+}

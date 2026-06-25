@@ -1,0 +1,65 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# ==========================
+# Virtual Environment
+# ==========================
+venv/
+.venv/
+env/
+.env/
+
+# ==========================
+# Secrets & Sensitive Files
+# ==========================
+.secrets
+*.secret
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# ==========================
+# Large Files & Model Outputs
+# ==========================
+lora_output/
+patent_pdfs/
+stable_diffusion/
+
+# ==========================
+# Weights & Biases
+# ==========================
+wandb/
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# IDE / Editor
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+tests/
+colab_runs/
+guides/
+test_pdfs/
+runs/
